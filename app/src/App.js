@@ -8,7 +8,7 @@ function App() {
 
   const [open, setOpen] = useState(false);
   const [mode, setMode] = useState(0);
-  const [size, setSize] = useState(7);
+  const [size, setSize] = useState(2);
   const [drawing, setDrawing] = useState(false);
 
 return (

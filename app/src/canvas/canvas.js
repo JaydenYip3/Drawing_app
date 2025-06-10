@@ -122,8 +122,14 @@ const Canvas = () => {
             else if ((e.metaKey || e.ctrlKey) && e.key === 'z'){
                 undo();
             }
-            else if((Array.from({length: 9}, (__, i) => (i).toString() )).includes(e.key)){
+            else if((Array.from({length: 8}, (__, i) => (i + 1).toString() )).includes(e.key)){
                 setSize(parseInt(e.key));
+            }
+            else if(e.key === 'w'){
+                setMode(0);
+            }
+            else if (e.key === 'e'){
+                setMode(1);
             }
         };
 
