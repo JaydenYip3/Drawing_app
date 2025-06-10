@@ -15,8 +15,9 @@
   "main": "public/electron.js",
   "scripts": {
     "start": "react-scripts start",
-    "electron": "electron .",
-    "electron-dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\""
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
